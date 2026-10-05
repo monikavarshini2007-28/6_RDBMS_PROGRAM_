@@ -1,4 +1,5 @@
-
+create database STUDENTID;
+ use STUDENTID;
 CREATE TABLE Student (
 StudentID INT,
 StudentName VARCHAR(30),
