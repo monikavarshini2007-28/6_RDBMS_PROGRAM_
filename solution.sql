@@ -1,17 +1,19 @@
 
-CREATE TABLE Marksheet (
-RollNo INT,
-Name VARCHAR(30),
-Department VARCHAR(10),
-Marks INT
+CREATE TABLE Student (
+StudentID INT,
+StudentName VARCHAR(30),
+Gender VARCHAR(10),
+DepartmentID INT
 );
 
-INSERT INTO Marksheet VALUES (1, 'Arun', 'CSE', 85);
-INSERT INTO Marksheet VALUES (2, 'Divya', 'IT', 78);
-INSERT INTO Marksheet VALUES (3, 'Karthik', 'CSE', 92);
-INSERT INTO Marksheet VALUES (4, 'Nisha', 'ECE', 67);
-INSERT INTO Marksheet VALUES (5, 'Rahul', 'IT', 88);
+INSERT INTO Student VALUES
+(1001, 'Arun', 'Male', 101);
 
-SELECT * FROM Marksheet
-WHERE Marks > 80
-ORDER BY Marks DESC;
+INSERT INTO Student VALUES
+(1002, 'Divya', 'Female', 102);
+
+INSERT INTO Student VALUES
+(1003, 'Karthik', 'Male', 101);
+
+SELECT * FROM Student;
+
